@@ -28,5 +28,5 @@ python calculator.py
 
 ## Author
 
-Sana
+Sanjida
 BCA Student | Aspiring Python Developer
