@@ -1,23 +1,48 @@
-print("===== PYTHON CALCULATOR =====")
 
-num1 = float(input("Enter first number: "))
-operator = input("Enter operator (+, -, *, /): ")
-num2 = float(input("Enter second number: "))
+def calculator():
+    print("\n===== PYTHON CALCULATOR 2.0 =====")
 
-if operator == "+":
-    print("Result:", num1 + num2)
+    while True:
+        print("\nChoose an operation:")
+        print("1. Addition (+)")
+        print("2. Subtraction (-)")
+        print("3. Multiplication (*)")
+        print("4. Division (/)")
+        print("5. Exit")
 
-elif operator == "-":
-    print("Result:", num1 - num2)
+        choice = input("\nEnter your choice (1-5): ")
 
-elif operator == "*":
-    print("Result:", num1 * num2)
+        if choice == "5":
+            print("Thank you for using Calculator!")
+            break
 
-elif operator == "/":
-    if num2 != 0:
-        print("Result:", num1 / num2)
-    else:
-        print("Cannot divide by zero!")
+        if choice not in ["1", "2", "3", "4"]:
+            print("Invalid choice! Try again.")
+            continue
 
-else:
-    print("Invalid operator!")
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+
+        except ValueError:
+            print("Please enter valid numbers!")
+            continue
+
+        if choice == "1":
+            result = num1 + num2
+
+        elif choice == "2":
+            result = num1 - num2
+
+        elif choice == "3":
+            result = num1 * num2
+
+        elif choice == "4":
+            if num2 == 0:
+                print("Cannot divide by zero!")
+                continue
+            result = num1 / num2
+
+        print("Result:", result)
+
+calculator()
