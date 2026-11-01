@@ -1,41 +1,32 @@
-# 🐍 Python Calculator
+# 🧮 Python Calculator 2.0
 
-A beginner-friendly calculator application developed using Python.
+A simple menu-driven calculator built using Python.
 
-## ✨ Features
+## Features
 
-* Addition (+)
-* Subtraction (-)
-* Multiplication (*)
-* Division (/)
+* Addition
+* Subtraction
+* Multiplication
+* Division
+* Input validation
 * Division-by-zero handling
-* User input validation
+* Continuous calculations until the user exits
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * Python 3
 
-## ▶️ How to Run
+## How to Run
 
-1. Install Python 3.
-2. Download or clone this repository.
-3. Open the project folder in VS Code.
-4. Run the following command:
+1. Download or clone this repository.
+2. Open the project folder in VS Code.
+3. Run:
 
 ```bash
 python calculator.py
 ```
 
-## 📌 Learning Outcomes
+## Author
 
-* Python conditional statements
-* User input and output
-* Arithmetic operators
-* Basic error handling
-
-## 👩‍💻 Author
-
-Sanjida
-
-GitHub: https://github.com/yasminsanjida2006-cmd
-
+Sana
+BCA Student | Aspiring Python Developer
